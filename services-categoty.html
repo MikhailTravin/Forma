@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Главная</title>
+	<title>Услуги-категория</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -23,14 +23,12 @@
 					<div class="header__menu menu">
 						<button type="button" class="menu__icon icon-menu"><span></span></button>
 						<nav class="menu__body">
-							<div class="menu__spollers spollers-menu">
-								<div class="spollers-menu__item">
-									<div class="spollers-menu__title">
-										<a href="#">
-											<h5>услуги</h5>
-										</a>
+							<div data-spollers="991.98,max" class="menu__spollers spollers-menu">
+								<div class="spollers-menu__item _active">
+									<button type="button" data-spoller class="spollers-menu__title">
+										<h5>услуги</h5>
 										<span class="spoller-open"></span>
-									</div>
+									</button>
 									<div class="spollers-menu__body">
 										<div class="spollers-menu__content">
 											<div class="spollers-menu__column">
@@ -62,44 +60,39 @@
 									</div>
 								</div>
 								<div class="spollers-menu__item">
-									<div class="spollers-menu__title">
-										<a href="#">
-											<h5>Команда</h5>
-										</a>
+									<a href="#" data-spoller class="spollers-menu__title">
+										<h5>Команда</h5>
 										<span></span>
-									</div>
+									</a>
+									<div hidden class="spollers-menu__body"></div>
 								</div>
 								<div class="spollers-menu__item">
-									<div class="spollers-menu__title">
-										<a href="#">
-											<h5>результаты</h5>
-										</a>
+									<a href="#" data-spoller class="spollers-menu__title">
+										<h5>результаты</h5>
 										<span></span>
-									</div>
+									</a>
+									<div hidden class="spollers-menu__body"></div>
 								</div>
 								<div class="spollers-menu__item">
-									<div class="spollers-menu__title">
-										<a href="#">
-											<h5>обучение</h5>
-										</a>
+									<a href="#" data-spoller class="spollers-menu__title">
+										<h5>обучение</h5>
 										<span></span>
-									</div>
+									</a>
+									<div hidden class="spollers-menu__body"></div>
 								</div>
 								<div class="spollers-menu__item">
-									<div class="spollers-menu__title">
-										<a href="#">
-											<h5>блог</h5>
-										</a>
+									<a href="#" data-spoller class="spollers-menu__title">
+										<h5>блог</h5>
 										<span></span>
-									</div>
+									</a>
+									<div hidden class="spollers-menu__body"></div>
 								</div>
 								<div class="spollers-menu__item">
-									<div class="spollers-menu__title">
-										<a href="#">
-											<h5>контакты</h5>
-										</a>
+									<a href="#" data-spoller class="spollers-menu__title">
+										<h5>контакты</h5>
 										<span></span>
-									</div>
+									</a>
+									<div hidden class="spollers-menu__body"></div>
 								</div>
 							</div>
 						</nav>
@@ -117,303 +110,52 @@
 				</div>
 			</div>
 		</header>
-		<main class="main-page">
-			<div class="page__main-home main-home">
-				<video autoplay muted loop playsinline preload loading="lazy" class="vv" src="./files/videos/video.mp4">
-					<source loading="lazy" src="./files/videos/video.mp4" type="video/mp4">
-				</video>
-				<!--
-				<picture><source srcset="img/main-bg.webp" type="image/webp"><img class="main-home__bg" src="img/main-bg.png" alt=""></picture>
-				<picture><source srcset="img/main-bg-mob.webp" type="image/webp"><img class="main-home__bg-mob" src="img/main-bg-mob.png" alt=""></picture>
-				-->
-				<div class="main-home__container">
-					<div class="main-home__content">
-						<div class="main-home__swiper">
-							<div class="main-home__slider swiper">
-								<div class="main-home__spollers swiper-wrapper">
-									<div class="main-home__slide swiper-slide">
-										<button type="button" class="main-home__title _icon-arrow">
-											<div class="main-home__sale">акция</div>
-											<h4>
-												СПЕЦИАЛЬНАЯ ЦЕНА
-												НА УВЕЛИЧЕНИЕ ГРУДИ
-											</h4>
-										</button>
-										<div class="main-home__body">
-											<div class="main-home__doctor">
-												<div class="main-home__image">
-													<picture><source srcset="img/photo/photo-1.webp" type="image/webp"><img src="img/photo/photo-1.png" alt=""></picture>
-												</div>
-												<div class="main-home__desc">
-													<p>Операцию проводит</p>
-													<h6>качаян ваник аршалуйсович</h6>
-												</div>
-											</div>
-											<div class="main-home__totals">
-												<div class="main-home__price">280 000 р</div>
-												<s class="main-home__old-price">360 000 р</s>
-											</div>
-											<a href="#" class="main-home__button-color button-color">Подробнее</a>
-											<a href="#" class="main-home__button button">Все акции</a>
-											<p>
-												Срок действия предложения: до 01.10.2024.
-												<br>
-												Запись осуществляется до 01.11.2024.
-											</p>
-										</div>
-									</div>
-									<div class="main-home__slide swiper-slide">
-										<button type="button" data-spoller class="main-home__title _icon-arrow">
-											<div class="main-home__sale">акция</div>
-											<h4>
-												СПЕЦИАЛЬНАЯ ЦЕНА
-												НА УВЕЛИЧЕНИЕ ГРУДИ
-											</h4>
-											<div class="main-home__doctor">
-												<div class="main-home__image">
-													<picture><source srcset="img/photo/photo-1.webp" type="image/webp"><img src="img/photo/photo-1.png" alt=""></picture>
-												</div>
-												<div class="main-home__desc">
-													<p>Операцию проводит</p>
-													<h6>качаян ваник аршалуйсович</h6>
-												</div>
-											</div>
-											<div class="main-home__totals">
-												<div class="main-home__price">280 000 р</div>
-												<s class="main-home__old-price">360 000 р</s>
-											</div>
-											<a href="#" class="main-home__button-color button-color">Подробнее</a>
-										</button>
-										<div class="main-home__body">
-											<a href="#" class="main-home__button button">Все акции</a>
-											<p>
-												Срок действия предложения: до 01.10.2024.
-												<br>
-												Запись осуществляется до 01.11.2024.
-											</p>
-										</div>
-									</div>
-									<div class="main-home__slide swiper-slide">
-										<button type="button" data-spoller class="main-home__title _icon-arrow">
-											<div class="main-home__sale">акция</div>
-											<h4>
-												СПЕЦИАЛЬНАЯ ЦЕНА
-												НА УВЕЛИЧЕНИЕ ГРУДИ
-											</h4>
-											<div class="main-home__doctor">
-												<div class="main-home__image">
-													<picture><source srcset="img/photo/photo-1.webp" type="image/webp"><img src="img/photo/photo-1.png" alt=""></picture>
-												</div>
-												<div class="main-home__desc">
-													<p>Операцию проводит</p>
-													<h6>качаян ваник аршалуйсович</h6>
-												</div>
-											</div>
-											<div class="main-home__totals">
-												<div class="main-home__price">280 000 р</div>
-												<s class="main-home__old-price">360 000 р</s>
-											</div>
-											<a href="#" class="main-home__button-color button-color">Подробнее</a>
-										</button>
-										<div class="main-home__body">
-											<a href="#" class="main-home__button button">Все акции</a>
-											<p>
-												Срок действия предложения: до 01.10.2024.
-												<br>
-												Запись осуществляется до 01.11.2024.
-											</p>
-										</div>
-									</div>
-									<div class="main-home__slide swiper-slide">
-										<button type="button" data-spoller class="main-home__title _icon-arrow">
-											<div class="main-home__sale">акция</div>
-											<h4>
-												СПЕЦИАЛЬНАЯ ЦЕНА
-												НА УВЕЛИЧЕНИЕ ГРУДИ
-											</h4>
-											<div class="main-home__doctor">
-												<div class="main-home__image">
-													<picture><source srcset="img/photo/photo-1.webp" type="image/webp"><img src="img/photo/photo-1.png" alt=""></picture>
-												</div>
-												<div class="main-home__desc">
-													<p>Операцию проводит</p>
-													<h6>качаян ваник аршалуйсович</h6>
-												</div>
-											</div>
-											<div class="main-home__totals">
-												<div class="main-home__price">280 000 р</div>
-												<s class="main-home__old-price">360 000 р</s>
-											</div>
-											<a href="#" class="main-home__button-color button-color">Подробнее</a>
-										</button>
-										<div class="main-home__body">
-											<a href="#" class="main-home__button button">Все акции</a>
-											<p>
-												Срок действия предложения: до 01.10.2024.
-												<br>
-												Запись осуществляется до 01.11.2024.
-											</p>
-										</div>
-									</div>
-									<div class="main-home__slide swiper-slide">
-										<button type="button" data-spoller class="main-home__title _icon-arrow">
-											<div class="main-home__sale">акция</div>
-											<h4>
-												СПЕЦИАЛЬНАЯ ЦЕНА
-												НА УВЕЛИЧЕНИЕ ГРУДИ
-											</h4>
-											<div class="main-home__doctor">
-												<div class="main-home__image">
-													<picture><source srcset="img/photo/photo-1.webp" type="image/webp"><img src="img/photo/photo-1.png" alt=""></picture>
-												</div>
-												<div class="main-home__desc">
-													<p>Операцию проводит</p>
-													<h6>качаян ваник аршалуйсович</h6>
-												</div>
-											</div>
-											<div class="main-home__totals">
-												<div class="main-home__price">280 000 р</div>
-												<s class="main-home__old-price">360 000 р</s>
-											</div>
-											<a href="#" class="main-home__button-color button-color">Подробнее</a>
-										</button>
-										<div class="main-home__body">
-											<a href="#" class="main-home__button button">Все акции</a>
-											<p>
-												Срок действия предложения: до 01.10.2024.
-												<br>
-												Запись осуществляется до 01.11.2024.
-											</p>
-										</div>
-									</div>
-									<div class="main-home__slide swiper-slide">
-										<button type="button" data-spoller class="main-home__title _icon-arrow">
-											<div class="main-home__sale">акция</div>
-											<h4>
-												СПЕЦИАЛЬНАЯ ЦЕНА
-												НА УВЕЛИЧЕНИЕ ГРУДИ
-											</h4>
-											<div class="main-home__doctor">
-												<div class="main-home__image">
-													<picture><source srcset="img/photo/photo-1.webp" type="image/webp"><img src="img/photo/photo-1.png" alt=""></picture>
-												</div>
-												<div class="main-home__desc">
-													<p>Операцию проводит</p>
-													<h6>качаян ваник аршалуйсович</h6>
-												</div>
-											</div>
-											<div class="main-home__totals">
-												<div class="main-home__price">280 000 р</div>
-												<s class="main-home__old-price">360 000 р</s>
-											</div>
-											<a href="#" class="main-home__button-color button-color">Подробнее</a>
-										</button>
-										<div class="main-home__body">
-											<a href="#" class="main-home__button button">Все акции</a>
-											<p>
-												Срок действия предложения: до 01.10.2024.
-												<br>
-												Запись осуществляется до 01.11.2024.
-											</p>
-										</div>
-									</div>
-									<div class="main-home__slide swiper-slide">
-										<button type="button" data-spoller class="main-home__title _icon-arrow">
-											<div class="main-home__sale">акция</div>
-											<h4>
-												СПЕЦИАЛЬНАЯ ЦЕНА
-												НА УВЕЛИЧЕНИЕ ГРУДИ
-											</h4>
-											<div class="main-home__doctor">
-												<div class="main-home__image">
-													<picture><source srcset="img/photo/photo-1.webp" type="image/webp"><img src="img/photo/photo-1.png" alt=""></picture>
-												</div>
-												<div class="main-home__desc">
-													<p>Операцию проводит</p>
-													<h6>качаян ваник аршалуйсович</h6>
-												</div>
-											</div>
-											<div class="main-home__totals">
-												<div class="main-home__price">280 000 р</div>
-												<s class="main-home__old-price">360 000 р</s>
-											</div>
-											<a href="#" class="main-home__button-color button-color">Подробнее</a>
-										</button>
-										<div class="main-home__body">
-											<a href="#" class="main-home__button button">Все акции</a>
-											<p>
-												Срок действия предложения: до 01.10.2024.
-												<br>
-												Запись осуществляется до 01.11.2024.
-											</p>
-										</div>
-									</div>
-									<div class="main-home__slide swiper-slide">
-										<button type="button" data-spoller class="main-home__title _icon-arrow">
-											<div class="main-home__sale">акция</div>
-											<h4>
-												СПЕЦИАЛЬНАЯ ЦЕНА
-												НА УВЕЛИЧЕНИЕ ГРУДИ
-											</h4>
-											<div class="main-home__doctor">
-												<div class="main-home__image">
-													<picture><source srcset="img/photo/photo-1.webp" type="image/webp"><img src="img/photo/photo-1.png" alt=""></picture>
-												</div>
-												<div class="main-home__desc">
-													<p>Операцию проводит</p>
-													<h6>качаян ваник аршалуйсович</h6>
-												</div>
-											</div>
-											<div class="main-home__totals">
-												<div class="main-home__price">280 000 р</div>
-												<s class="main-home__old-price">360 000 р</s>
-											</div>
-											<a href="#" class="main-home__button-color button-color">Подробнее</a>
-										</button>
-										<div class="main-home__body">
-											<a href="#" class="main-home__button button">Все акции</a>
-											<p>
-												Срок действия предложения: до 01.10.2024.
-												<br>
-												Запись осуществляется до 01.11.2024.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div class="main-home__pagination pagination"></div>
-							</div>
+		<main class="page services-category">
+			<div class="breadcrambs">
+				<div class="breadcrambs__container">
+					<div class="breadcrambs__content">
+						<ul>
+							<li>
+								<a href="#">
+									<h6>Главная</h6>
+									<span class="_icon-arrow"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<h6>услуги</h6>
+									<span class="_icon-arrow"></span>
+								</a>
+							</li>
+							<li><span>Пластика лица и шеи</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="page__services-top top-services">
+				<div class="top-services__container">
+					<h1>Пластика лица и шеи</h1>
+					<div class="top-services__content">
+						<div class="top-services__image">
+							<picture><source srcset="img/services/image-20.webp" type="image/webp"><img src="img/services/image-20.png" alt=""></picture>
 						</div>
-						<div class="main-home__arrows arrows">
-							<div class="main-home__arrow-prev arrow-prev _icon-arrow"></div>
-							<div class="main-home__arrow-next arrow-next  _icon-arrow"></div>
+						<div class="top-services__desc">
+							<p>
+								Пластика лица и шеи — это термин, которым обозначают сразу несколько различных
+								операций, направленных на коррекцию внешности и устранение признаков старения.
+							</p>
+							<a href="#" data-popup="#consultation" class="top-services__button button-color">Записаться
+								на
+								консультацию</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="page__services services popular-services">
+			<div class="page__services services">
 				<div class="services__container">
-					<h2>Популярные услуги</h2>
-					<div class="services__content scrolls">
-						<div class="services__body scroll">
-							<div class="services__column">
-								<div class="services__item">
-									<div class="services__image">
-										<picture><source data-srcset="img/services/image-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-1.png" alt=""></picture>
-									</div>
-									<div class="services__desc">
-										<div class="services__desc-top">
-											<div class="services__service">грудь</div>
-										</div>
-										<h4>увеличение груди</h4>
-										<p>
-											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
-											трети лица, под подбородком, по линии контура нижней челюсти.
-										</p>
-										<div class="services__price">цена: От 350 000 ₽</div>
-										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
-									</div>
-								</div>
-							</div>
+					<h2>операции</h2>
+					<div class="services__content">
+						<div class="services__body">
 							<div class="services__column">
 								<div class="services__item">
 									<div class="services__image">
@@ -422,13 +164,14 @@
 									<div class="services__desc">
 										<div class="services__desc-top">
 											<div class="services__service">лицо</div>
+											<div class="services__date date">20 сентября 2024</div>
 										</div>
 										<h4>фейслифтинг</h4>
 										<p>
 											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
 											трети лица, под подбородком, по линии контура нижней челюсти.
 										</p>
-										<div class="services__price">цена: От 350 000 ₽</div>
+										<div class="services__price">От 350 000 ₽</div>
 										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
 									</div>
 								</div>
@@ -436,18 +179,19 @@
 							<div class="services__column">
 								<div class="services__item">
 									<div class="services__image">
-										<picture><source data-srcset="img/services/image-3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-3.png" alt=""></picture>
+										<picture><source data-srcset="img/services/image-29.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-29.png" alt=""></picture>
 									</div>
 									<div class="services__desc">
 										<div class="services__desc-top">
-											<div class="services__service">тело</div>
+											<div class="services__service">лицо</div>
+											<div class="services__date date">20 сентября 2024</div>
 										</div>
-										<h4>абдоминопластика</h4>
+										<h4>Круговая подтяжка лица</h4>
 										<p>
 											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
 											трети лица, под подбородком, по линии контура нижней челюсти.
 										</p>
-										<div class="services__price">цена: От 350 000 ₽</div>
+										<div class="services__price">От 350 000 ₽</div>
 										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
 									</div>
 								</div>
@@ -455,183 +199,509 @@
 							<div class="services__column">
 								<div class="services__item">
 									<div class="services__image">
-										<picture><source data-srcset="img/services/image-4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-4.png" alt=""></picture>
+										<picture><source data-srcset="img/services/image-30.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-30.png" alt=""></picture>
 									</div>
 									<div class="services__desc">
 										<div class="services__desc-top">
-											<div class="services__service">прочее</div>
+											<div class="services__service">лицо</div>
+											<div class="services__date date">20 сентября 2024</div>
 										</div>
-										<h4>чекап «красота и здоровье»</h4>
+										<h4>Височный лифтинг</h4>
 										<p>
 											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
 											трети лица, под подбородком, по линии контура нижней челюсти.
 										</p>
-										<div class="services__price">цена: От 350 000 ₽</div>
+										<div class="services__price">От 350 000 ₽</div>
+										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="services__column">
+								<div class="services__item">
+									<div class="services__image">
+										<picture><source data-srcset="img/services/image-31.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-31.png" alt=""></picture>
+									</div>
+									<div class="services__desc">
+										<div class="services__desc-top">
+											<div class="services__service">лицо</div>
+											<div class="services__date date">20 сентября 2024</div>
+										</div>
+										<h4>Эндоскопический лифтинг лба</h4>
+										<p>
+											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
+											трети лица, под подбородком, по линии контура нижней челюсти.
+										</p>
+										<div class="services__price">От 350 000 ₽</div>
+										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="services__column">
+								<div class="services__item">
+									<div class="services__image">
+										<picture><source data-srcset="img/services/image-32.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-32.png" alt=""></picture>
+									</div>
+									<div class="services__desc">
+										<div class="services__desc-top">
+											<div class="services__service">лицо</div>
+											<div class="services__date date">20 сентября 2024</div>
+										</div>
+										<h4>SMAS-лифтинг</h4>
+										<p>
+											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
+											трети лица, под подбородком, по линии контура нижней челюсти.
+										</p>
+										<div class="services__price">От 350 000 ₽</div>
+										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="services__column">
+								<div class="services__item">
+									<div class="services__image">
+										<picture><source data-srcset="img/services/image-33.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-33.png" alt=""></picture>
+									</div>
+									<div class="services__desc">
+										<div class="services__desc-top">
+											<div class="services__service">лицо</div>
+											<div class="services__date date">20 сентября 2024</div>
+										</div>
+										<h4>Эндоскопический лифтинг бровей</h4>
+										<p>
+											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
+											трети лица, под подбородком, по линии контура нижней челюсти.
+										</p>
+										<div class="services__price">От 350 000 ₽</div>
+										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="services__column">
+								<div class="services__item">
+									<div class="services__image">
+										<picture><source data-srcset="img/services/image-34.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-34.png" alt=""></picture>
+									</div>
+									<div class="services__desc">
+										<div class="services__desc-top">
+											<div class="services__service">веки</div>
+											<div class="services__date date">20 сентября 2024</div>
+										</div>
+										<h4>Блефаропластика нижних век</h4>
+										<p>
+											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
+											трети лица, под подбородком, по линии контура нижней челюсти.
+										</p>
+										<div class="services__price">От 350 000 ₽</div>
+										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="services__column">
+								<div class="services__item">
+									<div class="services__image">
+										<picture><source data-srcset="img/services/image-35.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-35.png" alt=""></picture>
+									</div>
+									<div class="services__desc">
+										<div class="services__desc-top">
+											<div class="services__service">веки</div>
+											<div class="services__date date">20 сентября 2024</div>
+										</div>
+										<h4>Круговая блефаропластика</h4>
+										<p>
+											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
+											трети лица, под подбородком, по линии контура нижней челюсти.
+										</p>
+										<div class="services__price">От 350 000 ₽</div>
+										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="services__column">
+								<div class="services__item">
+									<div class="services__image">
+										<picture><source data-srcset="img/services/image-36.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-36.png" alt=""></picture>
+									</div>
+									<div class="services__desc">
+										<div class="services__desc-top">
+											<div class="services__service">веки</div>
+											<div class="services__date date">20 сентября 2024</div>
+										</div>
+										<h4>Верхняя блефаропластика</h4>
+										<p>
+											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
+											трети лица, под подбородком, по линии контура нижней челюсти.
+										</p>
+										<div class="services__price">От 350 000 ₽</div>
+										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="services__column">
+								<div class="services__item">
+									<div class="services__image">
+										<picture><source data-srcset="img/services/image-37.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-37.png" alt=""></picture>
+									</div>
+									<div class="services__desc">
+										<div class="services__desc-top">
+											<div class="services__service">веки</div>
+											<div class="services__date date">20 сентября 2024</div>
+										</div>
+										<h4>блефаропластика через конъюктиву</h4>
+										<p>
+											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
+											трети лица, под подбородком, по линии контура нижней челюсти.
+										</p>
+										<div class="services__price">От 350 000 ₽</div>
+										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="services__column">
+								<div class="services__item">
+									<div class="services__image">
+										<picture><source data-srcset="img/services/image-38.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-38.png" alt=""></picture>
+									</div>
+									<div class="services__desc">
+										<div class="services__desc-top">
+											<div class="services__service">веки</div>
+											<div class="services__date date">20 сентября 2024</div>
+										</div>
+										<h4>пластика азиатских век</h4>
+										<p>
+											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
+											трети лица, под подбородком, по линии контура нижней челюсти.
+										</p>
+										<div class="services__price">От 350 000 ₽</div>
+										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="services__column">
+								<div class="services__item">
+									<div class="services__image">
+										<picture><source data-srcset="img/services/image-39.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-39.png" alt=""></picture>
+									</div>
+									<div class="services__desc">
+										<div class="services__desc-top">
+											<div class="services__service">веки</div>
+											<div class="services__date date">20 сентября 2024</div>
+										</div>
+										<h4>Эпикантопластика</h4>
+										<p>
+											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
+											трети лица, под подбородком, по линии контура нижней челюсти.
+										</p>
+										<div class="services__price">От 350 000 ₽</div>
+										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="services__column">
+								<div class="services__item">
+									<div class="services__image">
+										<picture><source data-srcset="img/services/image-40.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-40.png" alt=""></picture>
+									</div>
+									<div class="services__desc">
+										<div class="services__desc-top">
+											<div class="services__service">губы</div>
+											<div class="services__date date">20 сентября 2024</div>
+										</div>
+										<h4>БУЛХОРН</h4>
+										<p>
+											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
+											трети лица, под подбородком, по линии контура нижней челюсти.
+										</p>
+										<div class="services__price">От 350 000 ₽</div>
+										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="services__column">
+								<div class="services__item">
+									<div class="services__image">
+										<picture><source data-srcset="img/services/image-41.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-41.png" alt=""></picture>
+									</div>
+									<div class="services__desc">
+										<div class="services__desc-top">
+											<div class="services__service">губы</div>
+											<div class="services__date date">20 сентября 2024</div>
+										</div>
+										<h4>V-Y пластика (хейлопластика)</h4>
+										<p>
+											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
+											трети лица, под подбородком, по линии контура нижней челюсти.
+										</p>
+										<div class="services__price">От 350 000 ₽</div>
+										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="services__column">
+								<div class="services__item">
+									<div class="services__image">
+										<picture><source data-srcset="img/services/image-42.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-42.png" alt=""></picture>
+									</div>
+									<div class="services__desc">
+										<div class="services__desc-top">
+											<div class="services__service">щеки</div>
+											<div class="services__date date">20 сентября 2024</div>
+										</div>
+										<h4>Удаление комков Биша</h4>
+										<p>
+											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
+											трети лица, под подбородком, по линии контура нижней челюсти.
+										</p>
+										<div class="services__price">От 350 000 ₽</div>
+										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="services__column">
+								<div class="services__item">
+									<div class="services__image">
+										<picture><source data-srcset="img/services/image-43.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-43.png" alt=""></picture>
+									</div>
+									<div class="services__desc">
+										<div class="services__desc-top">
+											<div class="services__service">уши</div>
+											<div class="services__date date">20 сентября 2024</div>
+										</div>
+										<h4>пластика мочки уха</h4>
+										<p>
+											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
+											трети лица, под подбородком, по линии контура нижней челюсти.
+										</p>
+										<div class="services__price">От 350 000 ₽</div>
+										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="services__column">
+								<div class="services__item">
+									<div class="services__image">
+										<picture><source data-srcset="img/services/image-44.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-44.png" alt=""></picture>
+									</div>
+									<div class="services__desc">
+										<div class="services__desc-top">
+											<div class="services__service">уши</div>
+											<div class="services__date date">20 сентября 2024</div>
+										</div>
+										<h4>Устранение лопоухости</h4>
+										<p>
+											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
+											трети лица, под подбородком, по линии контура нижней челюсти.
+										</p>
+										<div class="services__price">От 350 000 ₽</div>
+										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="services__column">
+								<div class="services__item">
+									<div class="services__image">
+										<picture><source data-srcset="img/services/image-45.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-45.png" alt=""></picture>
+									</div>
+									<div class="services__desc">
+										<div class="services__desc-top">
+											<div class="services__service">уши</div>
+											<div class="services__date date">20 сентября 2024</div>
+										</div>
+										<h4>уменьшение ушей</h4>
+										<p>
+											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
+											трети лица, под подбородком, по линии контура нижней челюсти.
+										</p>
+										<div class="services__price">От 350 000 ₽</div>
+										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="services__column">
+								<div class="services__item">
+									<div class="services__image">
+										<picture><source data-srcset="img/services/image-46.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-46.png" alt=""></picture>
+									</div>
+									<div class="services__desc">
+										<div class="services__desc-top">
+											<div class="services__service">подбородок</div>
+											<div class="services__date date">20 сентября 2024</div>
+										</div>
+										<h4>Уменьшение подбородка</h4>
+										<p>
+											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
+											трети лица, под подбородком, по линии контура нижней челюсти.
+										</p>
+										<div class="services__price">От 350 000 ₽</div>
+										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="services__column">
+								<div class="services__item">
+									<div class="services__image">
+										<picture><source data-srcset="img/services/image-47.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-47.png" alt=""></picture>
+									</div>
+									<div class="services__desc">
+										<div class="services__desc-top">
+											<div class="services__service">подбородок</div>
+											<div class="services__date date">20 сентября 2024</div>
+										</div>
+										<h4>подтяжка подбородка</h4>
+										<p>
+											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
+											трети лица, под подбородком, по линии контура нижней челюсти.
+										</p>
+										<div class="services__price">От 350 000 ₽</div>
+										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="services__column">
+								<div class="services__item">
+									<div class="services__image">
+										<picture><source data-srcset="img/services/image-48.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-48.png" alt=""></picture>
+									</div>
+									<div class="services__desc">
+										<div class="services__desc-top">
+											<div class="services__service">подбородок</div>
+											<div class="services__date date">20 сентября 2024</div>
+										</div>
+										<h4>Удаление второго подбородка</h4>
+										<p>
+											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
+											трети лица, под подбородком, по линии контура нижней челюсти.
+										</p>
+										<div class="services__price">От 350 000 ₽</div>
+										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="services__column">
+								<div class="services__item">
+									<div class="services__image">
+										<picture><source data-srcset="img/services/image-49.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-49.png" alt=""></picture>
+									</div>
+									<div class="services__desc">
+										<div class="services__desc-top">
+											<div class="services__service">подбородок</div>
+											<div class="services__date date">20 сентября 2024</div>
+										</div>
+										<h4>Удаление брылей</h4>
+										<p>
+											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
+											трети лица, под подбородком, по линии контура нижней челюсти.
+										</p>
+										<div class="services__price">От 350 000 ₽</div>
+										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="services__column">
+								<div class="services__item">
+									<div class="services__image">
+										<picture><source data-srcset="img/services/image-50.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-50.png" alt=""></picture>
+									</div>
+									<div class="services__desc">
+										<div class="services__desc-top">
+											<div class="services__service">шея</div>
+											<div class="services__date date">20 сентября 2024</div>
+										</div>
+										<h4>Платизмопластика</h4>
+										<p>
+											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
+											трети лица, под подбородком, по линии контура нижней челюсти.
+										</p>
+										<div class="services__price">От 350 000 ₽</div>
 										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<a href="#" class="services__button button">Все услуги и цены</a>
-				</div>
-			</div>
-			<div class="page__main-about main-about">
-				<div class="main-about__container">
-					<h2>О клинике</h2>
-					<div class="main-about__content">
-						<div class="main-about__top top-main-about">
-							<div class="top-main-about__image">
-								<img data-src="img/icons/forma_text.svg" alt="">
-							</div>
-							<div class="top-main-about__swiper">
-								<div class="top-main-about__slider swiper">
-									<div class="top-main-about__wrapper swiper-wrapper">
-										<div class="top-main-about__slide swiper-slide">
-											<div class="top-main-about__item">
-												<div class="h1">10+</div>
-												<p>
-													персонифицированных программ восстановления после операций,
-													индивидуально разработанных врачами клиники
-												</p>
-											</div>
-										</div>
-										<div class="top-main-about__slide swiper-slide">
-											<div class="top-main-about__item">
-												<div class="h1">Total immersion</div>
-												<p>
-													— обучающий курс, разработанный на основе богатого операционного
-													опыта наших специалистов
-												</p>
-											</div>
-										</div>
-										<div class="top-main-about__slide swiper-slide">
-											<div class="top-main-about__item">
-												<div class="h1">30+</div>
-												<p>
-													— обучающий курс, разработанный на основе богатого операционного
-													опыта наших специалистов
-												</p>
-											</div>
-										</div>
-										<div class="top-main-about__slide swiper-slide">
-											<div class="top-main-about__item">
-												<div class="h1">10+</div>
-												<p>
-													первоклассных специалистов, в том числе имеющих учёную степень
-												</p>
-											</div>
-										</div>
-										<div class="top-main-about__slide swiper-slide">
-											<div class="top-main-about__item">
-												<div class="h1">500+</div>
-												<p>
-													успешных операций и довольных результатом клиентов
-												</p>
-											</div>
-										</div>
-										<div class="top-main-about__slide swiper-slide">
-											<div class="top-main-about__item">
-												<div class="h1">collaboration</div>
-												<p>
-													— программа сотрудничества с Институтом скорой помощи им.
-													Склифосовского, в рамках которого расширены возможности оперативных
-													вмешательств
-												</p>
-											</div>
-										</div>
-										<div class="top-main-about__slide swiper-slide">
-											<div class="top-main-about__item">
-												<div class="h1">10+</div>
-												<p>
-													персонифицированных программ восстановления после операций,
-													индивидуально разработанных врачами клиники
-												</p>
-											</div>
-										</div>
-										<div class="top-main-about__slide swiper-slide">
-											<div class="top-main-about__item">
-												<div class="h1">10+</div>
-												<p>
-													персонифицированных программ восстановления после операций,
-													индивидуально разработанных врачами клиники
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="top-main-about__pagination pagination"></div>
-							</div>
-						</div>
-						<div class="main-about__bottom bottom-main-about">
-							<div class="bottom-main-about__body">
-								<div class="bottom-main-about__column">
-									<div class="bottom-main-about__item">
-										<h4>комфорт</h4>
-										<p>
-											Мы обеспечиваем уютную и доброжелательную атмосферу, позволяющую пациентам
-											всецело довериться опытным рукам профессиональной команды
-										</p>
-									</div>
-								</div>
-								<div class="bottom-main-about__column">
-									<div class="bottom-main-about__item">
-										<h4>качество</h4>
-										<p>
-											Наш приоритет — превосходный уровень сервиса на всех этапах от обращения на
-											ресепшн или к постовой медсестре до индивидуального сопровождения процедуры
-										</p>
-									</div>
-								</div>
-								<div class="bottom-main-about__column">
-									<div class="bottom-main-about__item">
-										<h4>безопасность</h4>
-										<p>
-											Клиника сертифицирована по современным стандартам. Операции проходят на
-											высококлассном оборудовании с соблюдением международных протоколов
-										</p>
-									</div>
-								</div>
-							</div>
-							<a href="#" class="main-about__button button">Узнать больше о нас</a>
-						</div>
+					<div class="services__pagging pagging">
+						<!--
+						<span class="pagging__arrow">
+							<span class="pagging__arrow-prev _icon-arrow-long"></span>
+						</span>
+						-->
+						<span class="pagging__number _active-pagging">1</span>
+						<a href="#" class="pagging__number">2</a>
+						<a href="#" class="pagging__number">3</a>
+						<a href="#" class="pagging__number last">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+						<a href="#" class="pagging__arrow">
+							<span class="pagging__arrow-next _icon-arrow-long"></span>
+						</a>
 					</div>
 				</div>
 			</div>
-			<div class="page__forms forms">
-				<div class="forms__container">
-					<div class="forms__content">
-						<div class="forms__item">
-							<h4>Получите консультацию специалистов клиники</h4>
-							<p>
-								Заполните форму и наш менеджер свяжется с Вами
-							</p>
-							<form action="#" data-dev data-popup-message="#form-message" class="forms__form">
-								<div class="forms__column">
-									<div class="forms__input">
-										<label for="name_1">Имя <span>*</span></label>
-										<input id="name_1" data-required data-error="Hint" autocomplete="off" type="text" name="form[]" placeholder="Как к Вам обращаться?">
+			<div class="page__result result">
+				<div class="result__container">
+					<h2>до и после</h2>
+					<div class="result__content scrolls">
+						<div class="result__body scroll">
+							<div class="result__column">
+								<div class="result__item">
+									<a href="#" data-popup="#result-4" class="result__image">
+										<picture><source data-srcset="img/result/result-6.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/result/result-6.png" alt=""></picture>
+									</a>
+									<div class="result__desc">
+										<h5>Елена, 37 лет</h5>
+										<p>
+											Риносептопластика
+										</p>
+										<div class="result__text">Процедуру выполнил пластический хирург</div>
+										<a href="#">
+											<h6>качаян ваник аршалуйсович</h6>
+										</a>
 									</div>
 								</div>
-								<div class="forms__column">
-									<div class="forms__input">
-										<label for="tel_1">Телефон <span>*</span></label>
-										<input id="tel_1" data-error="Hint" data-required autocomplete="off" class="telephone" type="text" name="form[]" placeholder="+7 (      )">
+							</div>
+							<div class="result__column">
+								<div class="result__item">
+									<a href="#" data-popup="#result-5" class="result__image">
+										<picture><source data-srcset="img/result/result-7.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/result/result-7.png" alt=""></picture>
+									</a>
+									<div class="result__desc">
+										<h5>пациентка, 28 лет</h5>
+										<p>
+											Пластика кончика носа
+										</p>
+										<div class="result__text">Процедуру выполнил пластический хирург</div>
+										<a href="#">
+											<h6>качаян ваник аршалуйсович</h6>
+										</a>
 									</div>
 								</div>
-								<div class="forms__column">
-									<button type="submit" class="forms__button button-color">Отправить</button>
+							</div>
+							<div class="result__column">
+								<div class="result__item">
+									<a href="#" data-popup="#result-6" class="result__image">
+										<picture><source data-srcset="img/result/result-8.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/result/result-8.png" alt=""></picture>
+									</a>
+									<div class="result__desc">
+										<h5>марина, 24 года</h5>
+										<p>
+											Ринопластика
+										</p>
+										<div class="result__text">Лечение провёл косметолог</div>
+										<a href="#">
+											<h6>качаян ваник аршалуйсович</h6>
+										</a>
+									</div>
 								</div>
-							</form>
-							<div class="forms__text">Нажимая на кнопку, вы даете согласие на <a href="#">обработку своих
-									персональных данных</a></div>
+							</div>
 						</div>
 					</div>
+					<a href="#" class="result__button button">Все результаты</a>
 				</div>
 			</div>
 			<div class="page__teams teams">
 				<div class="teams__container">
-					<h2>команда</h2>
+					<h2>специалисты по пластике лица и шеи</h2>
 					<div class="teams__content scrolls">
 						<div class="teams__body scroll">
 							<div class="teams__column">
@@ -683,336 +753,25 @@
 					<a href="#" class="teams__button button">Смотреть всех</a>
 				</div>
 			</div>
-			<div class="page__result result">
-				<div class="result__container">
-					<h2>до и после</h2>
-					<div class="result__content scrolls">
-						<div class="result__body scroll">
-							<div class="result__column">
-								<div class="result__item">
-									<a href="#" data-popup="#result-1" class="result__image">
-										<picture><source data-srcset="img/result/result-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/result/result-1.png" alt=""></picture>
-									</a>
-									<div class="result__desc">
-										<h5>Елена, 37 лет</h5>
-										<p>
-											Подтяжка средней зоны лица и нижняя блефаропластика
-										</p>
-										<div class="result__text">Процедуру выполнил пластический хирург</div>
-										<a href="#">
-											качаян ваник аршалуйсович
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="result__column">
-								<div class="result__item">
-									<a href="#" data-popup="#result-2" class="result__image">
-										<picture><source data-srcset="img/result/result-2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/result/result-2.png" alt=""></picture>
-									</a>
-									<div class="result__desc">
-										<h5>пациентка, 28 лет</h5>
-										<p>
-											Маммопластика и подтяжка груди
-										</p>
-										<div class="result__text">Процедуру выполнил пластический хирург</div>
-										<a href="#">
-											качаян ваник аршалуйсович
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="result__column">
-								<div class="result__item">
-									<a href="#" data-popup="#result-3" class="result__image">
-										<picture><source data-srcset="img/result/result-3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/result/result-3.png" alt=""></picture>
-									</a>
-									<div class="result__desc">
-										<h5>марина, 24 года</h5>
-										<p>
-											Лечение акне
-										</p>
-										<div class="result__text">Лечение провёл косметолог</div>
-										<a href="#">
-											качаян ваник аршалуйсович
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<a href="#" class="result__button button">Все результаты</a>
-				</div>
-			</div>
-			<div class="page__reviews reviews">
-				<div class="reviews__container">
-					<h2>отзывы</h2>
-					<div class="reviews__content scrolls">
-						<div class="reviews__body scroll">
-							<div class="reviews__column">
-								<div class="reviews__item">
-									<div class="reviews__top">
-										<div class="reviews__image">
-											<picture><source data-srcset="img/photo/photo-2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/photo/photo-2.png" alt=""></picture>
-										</div>
-										<div class="reviews__desc">
-											<h6>алина Р.</h6>
-											<p>
-												Знаток города 5 уровня
-											</p>
-										</div>
-									</div>
-									<div class="reviews__bottom">
-										<div class="reviews__ratings">
-											<div class="reviews__rating rating">
-												<div class="rating__body">
-													<div class="rating__line"></div>
-													<div class="rating__activeline"></div>
-													<div class="rating__stars">
-														<input type="radio" class="rating__star" value="1" name="rating">
-														<input type="radio" class="rating__star" value="2" name="rating">
-														<input type="radio" class="rating__star" value="3" name="rating">
-														<input type="radio" class="rating__star" value="4" name="rating">
-														<input type="radio" class="rating__star" value="5" name="rating">
-													</div>
-													<input value="4.5" type="hidden" name="rating" class="rating-input">
-												</div>
-											</div>
-											<div class="reviews__data">13 августа</div>
-										</div>
-										<p>
-											Только одни положительные эмоции! Сама клиника расположена в удобном
-											месте,красиво и чисто. Персонал весь приветливый. Отдельная огромная
-											благодарность врачу Маланичеву М.Ю. За его волшебные руки, дай Бог много
-											здоровья,всем советую,он нереально крутой! Также косметологу Кристине
-											Станиславовне хочу выразить благодарность, профи своего дела, обаятельный
-											привлекательный специалист. С ней легко,очень аккуратная и внимательная!
-										</p>
-										<a href="#" class="reviews__link link _icon-arrow-long">Читать
-											полностью</a>
-									</div>
-								</div>
-							</div>
-							<div class="reviews__column">
-								<div class="reviews__item">
-									<div class="reviews__top">
-										<div class="reviews__image">
-											<picture><source data-srcset="img/photo/photo-3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/photo/photo-3.png" alt=""></picture>
-										</div>
-										<div class="reviews__desc">
-											<h6>алина Р.</h6>
-											<p>
-												Знаток города 4 уровня
-											</p>
-										</div>
-									</div>
-									<div class="reviews__bottom">
-										<div class="reviews__ratings">
-											<div class="reviews__rating rating">
-												<div class="rating__body">
-													<div class="rating__line"></div>
-													<div class="rating__activeline"></div>
-													<div class="rating__stars">
-														<input type="radio" class="rating__star" value="1" name="rating">
-														<input type="radio" class="rating__star" value="2" name="rating">
-														<input type="radio" class="rating__star" value="3" name="rating">
-														<input type="radio" class="rating__star" value="4" name="rating">
-														<input type="radio" class="rating__star" value="5" name="rating">
-													</div>
-													<input value="5" type="hidden" name="rating" class="rating-input">
-												</div>
-											</div>
-											<div class="reviews__data">5 августа</div>
-										</div>
-										<p>
-											Хочу поблагодарить пластического хирурга Покаленьева Никиту Сергеевича за
-											прекрасную работу и замечательный результат( круговая блефаропластика) за
-											внимательное отношение. Никита Сергеевич- лучший доктор! Профессионал
-											высочайшего уровня! Результатом операции я очень довольна! В клинике я
-											пробыла сутки и вернулась домой. В послеоперационном периоде были отеки, но
-											со временем они прошли. Сейчас мне 48лет, но выгляжу я на 10-15 лет моложе.
-											Мой возраст мне никто...
-										</p>
-										<a href="#" class="reviews__link link _icon-arrow-long">Читать
-											полностью</a>
-									</div>
-								</div>
-							</div>
-							<div class="reviews__column">
-								<div class="reviews__item">
-									<div class="reviews__top">
-										<div class="reviews__image">
-											<picture><source data-srcset="img/photo/photo-2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/photo/photo-2.png" alt=""></picture>
-										</div>
-										<div class="reviews__desc">
-											<h6>алина Р.</h6>
-											<p>
-												Знаток города 5 уровня
-											</p>
-										</div>
-									</div>
-									<div class="reviews__bottom">
-										<div class="reviews__ratings">
-											<div class="reviews__rating rating">
-												<div class="rating__body">
-													<div class="rating__line"></div>
-													<div class="rating__activeline"></div>
-													<div class="rating__stars">
-														<input type="radio" class="rating__star" value="1" name="rating">
-														<input type="radio" class="rating__star" value="2" name="rating">
-														<input type="radio" class="rating__star" value="3" name="rating">
-														<input type="radio" class="rating__star" value="4" name="rating">
-														<input type="radio" class="rating__star" value="5" name="rating">
-													</div>
-													<input value="4.5" type="hidden" name="rating" class="rating-input">
-												</div>
-											</div>
-											<div class="reviews__data">22 июля</div>
-										</div>
-										<p>
-											Только одни положительные эмоции! Сама клиника расположена в удобном
-											месте,красиво и чисто. Персонал весь приветливый. Отдельная огромная
-											благодарность врачу Маланичеву М.Ю. За его волшебные руки, дай Бог много
-											здоровья,всем советую,он нереально крутой! Также косметологу Кристине
-											Станиславовне хочу выразить благодарность, профи своего дела, обаятельный
-											привлекательный специалист. С ней легко,очень аккуратная и внимательная!
-										</p>
-										<a href="#" class="reviews__link link _icon-arrow-long">Читать
-											полностью</a>
-									</div>
-								</div>
-							</div>
-							<div class="reviews__column">
-								<div class="reviews__item">
-									<div class="reviews__top">
-										<div class="reviews__image">
-											<picture><source data-srcset="img/photo/photo-3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/photo/photo-3.png" alt=""></picture>
-										</div>
-										<div class="reviews__desc">
-											<h6>алина Р.</h6>
-											<p>
-												Знаток города 4 уровня
-											</p>
-										</div>
-									</div>
-									<div class="reviews__bottom">
-										<div class="reviews__ratings">
-											<div class="reviews__rating rating">
-												<div class="rating__body">
-													<div class="rating__line"></div>
-													<div class="rating__activeline"></div>
-													<div class="rating__stars">
-														<input type="radio" class="rating__star" value="1" name="rating">
-														<input type="radio" class="rating__star" value="2" name="rating">
-														<input type="radio" class="rating__star" value="3" name="rating">
-														<input type="radio" class="rating__star" value="4" name="rating">
-														<input type="radio" class="rating__star" value="5" name="rating">
-													</div>
-													<input value="5" type="hidden" name="rating" class="rating-input">
-												</div>
-											</div>
-											<div class="reviews__data">1 июля</div>
-										</div>
-										<p>
-											Хочу поблагодарить пластического хирурга Покаленьева Никиту Сергеевича за
-											прекрасную работу и замечательный результат( круговая блефаропластика) за
-											внимательное отношение. Никита Сергеевич- лучший доктор! Профессионал
-											высочайшего уровня! Результатом операции я очень довольна! В клинике я
-											пробыла сутки и вернулась домой. В послеоперационном периоде были отеки, но
-											со временем они прошли. Сейчас мне 48лет, но выгляжу я на 10-15 лет моложе.
-											Мой возраст мне никто...
-										</p>
-										<a href="#" class="reviews__link link _icon-arrow-long">Читать
-											полностью</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<a href="#" class="reviews__button button">Все отзывы</a>
-				</div>
-			</div>
 			<div class="page__forms forms">
 				<div class="forms__container">
 					<div class="forms__content">
 						<div class="forms__item">
-							<h4>Рассчитайте стоимость операции</h4>
+							<h4>Получите консультацию специалистов клиники</h4>
 							<p>
 								Заполните форму и наш менеджер свяжется с Вами
 							</p>
 							<form action="#" data-dev data-popup-message="#form-message" class="forms__form">
 								<div class="forms__column">
 									<div class="forms__input">
-										<label for="name-operation">Название операции (если знаете)</label>
-										<input id="name-operation" autocomplete="off" type="text" name="form[2]" placeholder="Начните вводить название">
+										<label for="name_5">Имя <span>*</span></label>
+										<input id="name_5" data-required data-error="Hint" autocomplete="off" type="text" name="form[5]" placeholder="Как к Вам обращаться?">
 									</div>
 								</div>
 								<div class="forms__column">
 									<div class="forms__input">
-										<div class="forms__select select">
-											<div class="select__menu">
-												<div class="select__btn">
-													<div class="select__btntext">
-														<label for="doctor">Хирург (опционально)</label>
-														<input id="doctor" autocomplete="off" type="text" name="form[2]" placeholder="Выберите из списка" class="select__input">
-													</div>
-													<div class="select__icon _icon-arrow"></div>
-												</div>
-												<div class="select__body">
-													<ul class="select__options">
-														<li class="select__option">
-															<div class="select__option-text">Выберите из списка1</div>
-														</li>
-														<li class="select__option">
-															<div class="select__option-text">Выберите из списка2</div>
-														</li>
-														<li class="select__option">
-															<div class="select__option-text">Выберите из списка3</div>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="forms__column">
-									<div class="forms__input">
-										<div class="forms__select select">
-											<div class="select__menu">
-												<div class="select__btn">
-													<div class="select__btntext">
-														<label for="data">Примерная дата</label>
-														<input id="data" autocomplete="off" type="text" name="form[2]" placeholder="Выберите из списка" class="select__input">
-													</div>
-													<div class="select__icon _icon-arrow"></div>
-												</div>
-												<div class="select__body">
-													<ul class="select__options">
-														<li class="select__option">
-															<div class="select__option-text">Выберите из списка1</div>
-														</li>
-														<li class="select__option">
-															<div class="select__option-text">Выберите из списка2</div>
-														</li>
-														<li class="select__option">
-															<div class="select__option-text">Выберите из списка3</div>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="forms__column">
-									<div class="forms__input">
-										<label for="name_2">Имя <span>*</span></label>
-										<input id="name_2" data-required data-error="Hint" autocomplete="off" type="text" name="form[2]" placeholder="Как к Вам обращаться?">
-									</div>
-								</div>
-								<div class="forms__column">
-									<div class="forms__input">
-										<label for="tel_2">Телефон <span>*</span></label>
-										<input id="tel_2" data-required data-error="Hint" autocomplete="off" class="telephone" type="text" name="form[2]" placeholder="+7 (      )">
+										<label for="tel_5">Телефон <span>*</span></label>
+										<input id="tel_5" data-error="Hint" data-required autocomplete="off" class="telephone" type="text" name="form[5]" placeholder="+7 (      )">
 									</div>
 								</div>
 								<div class="forms__column">

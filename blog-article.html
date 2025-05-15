@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Главная</title>
+	<title>Блог-статья</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -23,14 +23,12 @@
 					<div class="header__menu menu">
 						<button type="button" class="menu__icon icon-menu"><span></span></button>
 						<nav class="menu__body">
-							<div class="menu__spollers spollers-menu">
+							<div data-spollers="991.98,max" class="menu__spollers spollers-menu">
 								<div class="spollers-menu__item">
-									<div class="spollers-menu__title">
-										<a href="#">
-											<h5>услуги</h5>
-										</a>
+									<button type="button" data-spoller class="spollers-menu__title">
+										<h5>услуги</h5>
 										<span class="spoller-open"></span>
-									</div>
+									</button>
 									<div class="spollers-menu__body">
 										<div class="spollers-menu__content">
 											<div class="spollers-menu__column">
@@ -62,44 +60,39 @@
 									</div>
 								</div>
 								<div class="spollers-menu__item">
-									<div class="spollers-menu__title">
-										<a href="#">
-											<h5>Команда</h5>
-										</a>
+									<a href="#" data-spoller class="spollers-menu__title">
+										<h5>Команда</h5>
 										<span></span>
-									</div>
+									</a>
+									<div hidden class="spollers-menu__body"></div>
 								</div>
 								<div class="spollers-menu__item">
-									<div class="spollers-menu__title">
-										<a href="#">
-											<h5>результаты</h5>
-										</a>
+									<a href="#" data-spoller class="spollers-menu__title">
+										<h5>результаты</h5>
 										<span></span>
-									</div>
+									</a>
+									<div hidden class="spollers-menu__body"></div>
 								</div>
 								<div class="spollers-menu__item">
-									<div class="spollers-menu__title">
-										<a href="#">
-											<h5>обучение</h5>
-										</a>
+									<a href="#" data-spoller class="spollers-menu__title">
+										<h5>обучение</h5>
 										<span></span>
-									</div>
+									</a>
+									<div hidden class="spollers-menu__body"></div>
+								</div>
+								<div class="spollers-menu__item _active">
+									<a href="#" data-spoller class="spollers-menu__title">
+										<h5>блог</h5>
+										<span></span>
+									</a>
+									<div hidden class="spollers-menu__body"></div>
 								</div>
 								<div class="spollers-menu__item">
-									<div class="spollers-menu__title">
-										<a href="#">
-											<h5>блог</h5>
-										</a>
+									<a href="#" data-spoller class="spollers-menu__title">
+										<h5>контакты</h5>
 										<span></span>
-									</div>
-								</div>
-								<div class="spollers-menu__item">
-									<div class="spollers-menu__title">
-										<a href="#">
-											<h5>контакты</h5>
-										</a>
-										<span></span>
-									</div>
+									</a>
+									<div hidden class="spollers-menu__body"></div>
 								</div>
 							</div>
 						</nav>
@@ -117,521 +110,465 @@
 				</div>
 			</div>
 		</header>
-		<main class="main-page">
-			<div class="page__main-home main-home">
-				<video autoplay muted loop playsinline preload loading="lazy" class="vv" src="./files/videos/video.mp4">
-					<source loading="lazy" src="./files/videos/video.mp4" type="video/mp4">
-				</video>
-				<!--
-				<picture><source srcset="img/main-bg.webp" type="image/webp"><img class="main-home__bg" src="img/main-bg.png" alt=""></picture>
-				<picture><source srcset="img/main-bg-mob.webp" type="image/webp"><img class="main-home__bg-mob" src="img/main-bg-mob.png" alt=""></picture>
-				-->
-				<div class="main-home__container">
-					<div class="main-home__content">
-						<div class="main-home__swiper">
-							<div class="main-home__slider swiper">
-								<div class="main-home__spollers swiper-wrapper">
-									<div class="main-home__slide swiper-slide">
-										<button type="button" class="main-home__title _icon-arrow">
-											<div class="main-home__sale">акция</div>
-											<h4>
-												СПЕЦИАЛЬНАЯ ЦЕНА
-												НА УВЕЛИЧЕНИЕ ГРУДИ
-											</h4>
-										</button>
-										<div class="main-home__body">
-											<div class="main-home__doctor">
-												<div class="main-home__image">
-													<picture><source srcset="img/photo/photo-1.webp" type="image/webp"><img src="img/photo/photo-1.png" alt=""></picture>
-												</div>
-												<div class="main-home__desc">
-													<p>Операцию проводит</p>
-													<h6>качаян ваник аршалуйсович</h6>
-												</div>
-											</div>
-											<div class="main-home__totals">
-												<div class="main-home__price">280 000 р</div>
-												<s class="main-home__old-price">360 000 р</s>
-											</div>
-											<a href="#" class="main-home__button-color button-color">Подробнее</a>
-											<a href="#" class="main-home__button button">Все акции</a>
+		<main class="page blog-article">
+			<div class="breadcrambs">
+				<div class="breadcrambs__container">
+					<div class="breadcrambs__content">
+						<ul>
+							<li>
+								<a href="#">
+									<h6>Главная</h6>
+									<span class="_icon-arrow"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<h6>Блог</h6>
+									<span class="_icon-arrow"></span>
+								</a>
+							</li>
+							<li><span>стоит ли делать ринопластику?</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="page__article">
+				<div class="article__container">
+					<div class="article__content">
+						<div class="article__title">
+							<div class="article__date date">20 сентября 2024</div>
+							<h1>стоит ли делать ринопластику?</h1>
+							<div class="article__author">
+								<div class="article__image">
+									<picture><source srcset="img/photo/photo-1.webp" type="image/webp"><img src="img/photo/photo-1.png" alt=""></picture>
+								</div>
+								<div class="article__desc">
+									<p>Рассказывает пластический хирург</p>
+									<a href="#">
+										<h6>качаян ваник аршалуйсович</h6>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="article__body">
+							<div class="article__contents content-article">
+								<div class="content-article__item">
+									<p>
+										Ринопластика — это хирургический метод коррекции формы и размера носа, его
+										кончика и
+										перегородки. Среди всех имеющихся способов пластики носа эта операция наиболее
+										эффективна, но она же считается самой сложной и сопровождается риском
+										осложнений.
+										Все это вызывает сомнения, стоит ли делать ринопластику и каков шанс получить
+										желаемый результат.
+									</p>
+								</div>
+								<div data-watch="navigator" class="content-article__item indications">
+									<h5>показания к операции</h5>
+									<p>
+										Показания к проведению ринопластики — дефекты носа, приводящие к эстетическому и
+										физическому дискомфорту:
+									</p>
+									<ul>
+										<li>
 											<p>
-												Срок действия предложения: до 01.10.2024.
-												<br>
-												Запись осуществляется до 01.11.2024.
+												последствия переломов и вывихов;
 											</p>
-										</div>
-									</div>
-									<div class="main-home__slide swiper-slide">
-										<button type="button" data-spoller class="main-home__title _icon-arrow">
-											<div class="main-home__sale">акция</div>
-											<h4>
-												СПЕЦИАЛЬНАЯ ЦЕНА
-												НА УВЕЛИЧЕНИЕ ГРУДИ
-											</h4>
-											<div class="main-home__doctor">
-												<div class="main-home__image">
-													<picture><source srcset="img/photo/photo-1.webp" type="image/webp"><img src="img/photo/photo-1.png" alt=""></picture>
-												</div>
-												<div class="main-home__desc">
-													<p>Операцию проводит</p>
-													<h6>качаян ваник аршалуйсович</h6>
-												</div>
-											</div>
-											<div class="main-home__totals">
-												<div class="main-home__price">280 000 р</div>
-												<s class="main-home__old-price">360 000 р</s>
-											</div>
-											<a href="#" class="main-home__button-color button-color">Подробнее</a>
-										</button>
-										<div class="main-home__body">
-											<a href="#" class="main-home__button button">Все акции</a>
+										</li>
+										<li>
 											<p>
-												Срок действия предложения: до 01.10.2024.
-												<br>
-												Запись осуществляется до 01.11.2024.
+												искривление носовой перегородки;
 											</p>
-										</div>
-									</div>
-									<div class="main-home__slide swiper-slide">
-										<button type="button" data-spoller class="main-home__title _icon-arrow">
-											<div class="main-home__sale">акция</div>
-											<h4>
-												СПЕЦИАЛЬНАЯ ЦЕНА
-												НА УВЕЛИЧЕНИЕ ГРУДИ
-											</h4>
-											<div class="main-home__doctor">
-												<div class="main-home__image">
-													<picture><source srcset="img/photo/photo-1.webp" type="image/webp"><img src="img/photo/photo-1.png" alt=""></picture>
-												</div>
-												<div class="main-home__desc">
-													<p>Операцию проводит</p>
-													<h6>качаян ваник аршалуйсович</h6>
-												</div>
-											</div>
-											<div class="main-home__totals">
-												<div class="main-home__price">280 000 р</div>
-												<s class="main-home__old-price">360 000 р</s>
-											</div>
-											<a href="#" class="main-home__button-color button-color">Подробнее</a>
-										</button>
-										<div class="main-home__body">
-											<a href="#" class="main-home__button button">Все акции</a>
+										</li>
+										<li>
 											<p>
-												Срок действия предложения: до 01.10.2024.
-												<br>
-												Запись осуществляется до 01.11.2024.
+												дисгармоничный нос;
 											</p>
-										</div>
-									</div>
-									<div class="main-home__slide swiper-slide">
-										<button type="button" data-spoller class="main-home__title _icon-arrow">
-											<div class="main-home__sale">акция</div>
-											<h4>
-												СПЕЦИАЛЬНАЯ ЦЕНА
-												НА УВЕЛИЧЕНИЕ ГРУДИ
-											</h4>
-											<div class="main-home__doctor">
-												<div class="main-home__image">
-													<picture><source srcset="img/photo/photo-1.webp" type="image/webp"><img src="img/photo/photo-1.png" alt=""></picture>
-												</div>
-												<div class="main-home__desc">
-													<p>Операцию проводит</p>
-													<h6>качаян ваник аршалуйсович</h6>
-												</div>
-											</div>
-											<div class="main-home__totals">
-												<div class="main-home__price">280 000 р</div>
-												<s class="main-home__old-price">360 000 р</s>
-											</div>
-											<a href="#" class="main-home__button-color button-color">Подробнее</a>
-										</button>
-										<div class="main-home__body">
-											<a href="#" class="main-home__button button">Все акции</a>
+										</li>
+										<li>
 											<p>
-												Срок действия предложения: до 01.10.2024.
-												<br>
-												Запись осуществляется до 01.11.2024.
+												широкий, крючкообразный, мясистый кончик носа;
 											</p>
-										</div>
-									</div>
-									<div class="main-home__slide swiper-slide">
-										<button type="button" data-spoller class="main-home__title _icon-arrow">
-											<div class="main-home__sale">акция</div>
-											<h4>
-												СПЕЦИАЛЬНАЯ ЦЕНА
-												НА УВЕЛИЧЕНИЕ ГРУДИ
-											</h4>
-											<div class="main-home__doctor">
-												<div class="main-home__image">
-													<picture><source srcset="img/photo/photo-1.webp" type="image/webp"><img src="img/photo/photo-1.png" alt=""></picture>
-												</div>
-												<div class="main-home__desc">
-													<p>Операцию проводит</p>
-													<h6>качаян ваник аршалуйсович</h6>
-												</div>
-											</div>
-											<div class="main-home__totals">
-												<div class="main-home__price">280 000 р</div>
-												<s class="main-home__old-price">360 000 р</s>
-											</div>
-											<a href="#" class="main-home__button-color button-color">Подробнее</a>
-										</button>
-										<div class="main-home__body">
-											<a href="#" class="main-home__button button">Все акции</a>
+										</li>
+										<li>
 											<p>
-												Срок действия предложения: до 01.10.2024.
-												<br>
-												Запись осуществляется до 01.11.2024.
+												горбинка на переносице;
 											</p>
-										</div>
-									</div>
-									<div class="main-home__slide swiper-slide">
-										<button type="button" data-spoller class="main-home__title _icon-arrow">
-											<div class="main-home__sale">акция</div>
-											<h4>
-												СПЕЦИАЛЬНАЯ ЦЕНА
-												НА УВЕЛИЧЕНИЕ ГРУДИ
-											</h4>
-											<div class="main-home__doctor">
-												<div class="main-home__image">
-													<picture><source srcset="img/photo/photo-1.webp" type="image/webp"><img src="img/photo/photo-1.png" alt=""></picture>
-												</div>
-												<div class="main-home__desc">
-													<p>Операцию проводит</p>
-													<h6>качаян ваник аршалуйсович</h6>
-												</div>
-											</div>
-											<div class="main-home__totals">
-												<div class="main-home__price">280 000 р</div>
-												<s class="main-home__old-price">360 000 р</s>
-											</div>
-											<a href="#" class="main-home__button-color button-color">Подробнее</a>
-										</button>
-										<div class="main-home__body">
-											<a href="#" class="main-home__button button">Все акции</a>
+										</li>
+										<li>
 											<p>
-												Срок действия предложения: до 01.10.2024.
-												<br>
-												Запись осуществляется до 01.11.2024.
+												массивные крылья носа. 
 											</p>
-										</div>
-									</div>
-									<div class="main-home__slide swiper-slide">
-										<button type="button" data-spoller class="main-home__title _icon-arrow">
-											<div class="main-home__sale">акция</div>
-											<h4>
-												СПЕЦИАЛЬНАЯ ЦЕНА
-												НА УВЕЛИЧЕНИЕ ГРУДИ
-											</h4>
-											<div class="main-home__doctor">
-												<div class="main-home__image">
-													<picture><source srcset="img/photo/photo-1.webp" type="image/webp"><img src="img/photo/photo-1.png" alt=""></picture>
-												</div>
-												<div class="main-home__desc">
-													<p>Операцию проводит</p>
-													<h6>качаян ваник аршалуйсович</h6>
-												</div>
-											</div>
-											<div class="main-home__totals">
-												<div class="main-home__price">280 000 р</div>
-												<s class="main-home__old-price">360 000 р</s>
-											</div>
-											<a href="#" class="main-home__button-color button-color">Подробнее</a>
-										</button>
-										<div class="main-home__body">
-											<a href="#" class="main-home__button button">Все акции</a>
+										</li>
+									</ul>
+									<p>
+										Кроме того, ринопластику делают по желанию человека, если он хочет изменить
+										форму и размер даже без медицинских показаний. При этом у пациента не должно
+										быть никаких противопоказаний к операции, а некоторые специалисты даже
+										рекомендуют предварительно получить консультацию психолога.
+									</p>
+									<picture><source data-srcset="img/services/image-13.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-13.png" alt=""></picture>
+								</div>
+								<div data-watch="navigator" class="content-article__item limitations">
+									<h5>
+										Противопоказания и ограничения
+									</h5>
+									<p>
+										Ринопластика — довольно серьезное хирургическое вмешательство, поэтому для нее
+										есть несколько противопоказаний:
+									</p>
+									<ul>
+										<li>
 											<p>
-												Срок действия предложения: до 01.10.2024.
-												<br>
-												Запись осуществляется до 01.11.2024.
+												нарушение свертываемости крови;
 											</p>
-										</div>
-									</div>
-									<div class="main-home__slide swiper-slide">
-										<button type="button" data-spoller class="main-home__title _icon-arrow">
-											<div class="main-home__sale">акция</div>
-											<h4>
-												СПЕЦИАЛЬНАЯ ЦЕНА
-												НА УВЕЛИЧЕНИЕ ГРУДИ
-											</h4>
-											<div class="main-home__doctor">
-												<div class="main-home__image">
-													<picture><source srcset="img/photo/photo-1.webp" type="image/webp"><img src="img/photo/photo-1.png" alt=""></picture>
-												</div>
-												<div class="main-home__desc">
-													<p>Операцию проводит</p>
-													<h6>качаян ваник аршалуйсович</h6>
-												</div>
-											</div>
-											<div class="main-home__totals">
-												<div class="main-home__price">280 000 р</div>
-												<s class="main-home__old-price">360 000 р</s>
-											</div>
-											<a href="#" class="main-home__button-color button-color">Подробнее</a>
-										</button>
-										<div class="main-home__body">
-											<a href="#" class="main-home__button button">Все акции</a>
+										</li>
+										<li>
 											<p>
-												Срок действия предложения: до 01.10.2024.
-												<br>
-												Запись осуществляется до 01.11.2024.
+												тяжелые заболевания печени и сердца;
 											</p>
+										</li>
+										<li>
+											<p>
+												запущенный сахарный диабет;
+											</p>
+										</li>
+										<li>
+											<p>
+												активный туберкулез;
+											</p>
+										</li>
+										<li>
+											<p>
+												аллергия на препараты для наркоза. 
+											</p>
+										</li>
+									</ul>
+									<p>
+										Временные ограничения для операции: острые заболевания с высокой температурой
+										тела, герпетическая инфекция с высыпаниями на лице, раны и воспаление кожи в
+										области носа.
+									</p>
+								</div>
+								<div class="content-article__item forms">
+									<div class="forms__content">
+										<div class="forms__item">
+											<h5>Получите консультацию специалистов клиники</h5>
+											<p>
+												Заполните форму и наш менеджер свяжется с Вами
+											</p>
+											<form action="#" data-dev data-popup-message="#form-message" class="forms__form">
+												<div class="forms__column">
+													<div class="forms__input">
+														<label for="name_4">Имя <span>*</span></label>
+														<input id="name_4" data-required data-error="Hint" autocomplete="off" type="text" name="form[4]" placeholder="Как к Вам обращаться?">
+													</div>
+												</div>
+												<div class="forms__column">
+													<div class="forms__input">
+														<label for="tel_4">Телефон <span>*</span></label>
+														<input id="tel_4" data-error="Hint" data-required autocomplete="off" class="telephone" type="text" name="form[4]" placeholder="+7 (      )">
+													</div>
+												</div>
+												<div class="forms__column">
+													<button type="submit" class="forms__button button-color">Отправить</button>
+												</div>
+											</form>
+											<div class="forms__text">Нажимая на кнопку, вы даете согласие на <a href="#">обработку своих
+													персональных данных</a></div>
 										</div>
 									</div>
 								</div>
-								<div class="main-home__pagination pagination"></div>
+								<div data-watch="navigator" class="content-article__item arguments">
+									<h5>аргументы за и против</h5>
+									<p class="first-p">
+										Перед принятием решения о том, нужна ли человеку пластика носа, следует
+										внимательно
+										рассмотреть все аргументы за и против. 
+									</p>
+									<p>
+										В пользу ринопластики говорят следующие аргументы:
+									</p>
+									<ul>
+										<li>
+											<p>
+												операция дает наилучший эстетический и медицинский эффект по сравнению с
+												другими
+												способами пластики;
+											</p>
+										</li>
+										<li>
+											<p>
+												результат сохраняется минимум на 10 лет, чаще всего повторная коррекция
+												не
+												требуется;
+											</p>
+										</li>
+										<li>
+											<p>
+												с помощью хирургической пластики можно исправить любые дефекты костной и
+												хрящевой
+												частей носа;
+											</p>
+										</li>
+										<li>
+											<p>
+												ринопластику можно делать даже в пожилом возрасте при отсутствии
+												серьезных
+												хронических заболеваний. 
+											</p>
+										</li>
+									</ul>
+									<p>
+										Аргументы против ринопластики:
+									</p>
+									<ul>
+										<li>
+											<p>
+												операцию нельзя делать до 18-21 года, пока окончательно не сформируется
+												скелет носа;
+											</p>
+										</li>
+										<li>
+											<p>
+												хирургическое вмешательство требует проведения наркоза, сопряжено с
+												большой
+												нагрузкой на организм;
+											</p>
+										</li>
+										<li>
+											<p>
+												перед хирургической пластикой нужна довольно длительная подготовка,
+												предварительное
+												обследование;
+											</p>
+										</li>
+										<li>
+											<p>
+												после операции пациенту предстоит долгий период реабилитации.
+											</p>
+										</li>
+									</ul>
+									<div class="content-article__video">
+										<div class="content-article__play play _icon-play"></div>
+										<video poster="img/poster-video.png" class="content-article__item-video video" data-src="./files/videos/video.mp4">
+											<source data-src="./files/videos/video.mp4" type="video/mp4">
+										</video>
+									</div>
+									<!--ЮТУБ ВИДЕО
+										<div class="content-article__video">
+											<iframe
+												data-src="https://www.youtube.com/embed/BVusB89tTj4?si=OcC7eBeGgqKHNWyK"
+												title="YouTube video player" frameborder="0"
+												allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+												referrerpolicy="strict-origin-when-cross-origin"
+												allowfullscreen></iframe>
+										</div>
+										-->
+								</div>
+								<div data-watch="navigator" class="content-article__item expectations">
+									<h5>Может ли ринопластика не оправдать ожиданий?</h5>
+									<p>
+										Хирургическая пластика позволяет исправить любые дефекты носа. Но в некоторых
+										случаях операция может не оправдать ожиданий пациента, ведь восприятие человеком
+										собственного лица всегда субъективное. 
+									</p>
+									<p>
+										Причиной неудачной ринопластики могут быть неправильные действия хирурга,
+										неподходящая методика операции, индивидуальные особенности организма человека,
+										несоблюдение пациентом рекомендаций врача в реабилитационном периоде.
+										Субъективное
+										недовольство пациента прооперированным носом обычно наблюдается в тех случаях,
+										когда
+										перед пластикой не была сделана 3D-реконструкция с помощью компьютера. 
+									</p>
+									<p>
+										Редко случается так, что даже операция не может исправить косметический дефект.
+										Обычно это наблюдается при обширных повреждениях носа после тяжелых травм и
+										ожогов.
+									</p>
+								</div>
+								<div data-watch="navigator" class="content-article__item conclusions">
+									<h5>Выводы</h5>
+									<p>
+										Операцию на носу для коррекции его формы и размера стоит сделать при наличии
+										медицинских и эстетических показаний. У людей старше 25 лет это оптимальный
+										вариант
+										улучшения внешности и восстановления носового дыхания. Несмотря на длительную
+										подготовку и реабилитацию, ринопластика дает долгосрочный результат и в целом
+										полностью оправдывает потраченное время и силы. 
+									</p>
+									<p>
+										Если же нужна легкая коррекция формы кончика носа или выравнивание его спинки,
+										можно
+										воспользоваться другими способами пластики, например, использовать филлеры.
+									</p>
+								</div>
+								<div data-watch="navigator" class="content-article__item sources">
+									<h5>Источники статьи:</h5>
+									<ul>
+										<li>
+											<span>1.</span>
+											<p>
+												Ринопластика. Татарчук П.А., Узбекова Л.Д., Касаева Г.Р. StudNet.
+												2021.
+												№1. с.1-10
+											</p>
+										</li>
+										<li>
+											<span>2.</span>
+											<p>
+												Ринопластика: за и против. Алиуллина А.Д., Пардасова Ю.Е., Белкина
+												Н.Ю.
+												Приднепровский научный вестник. 2023. Том 4. №3. с.99-102
+											</p>
+										</li>
+										<li>
+											<span>3.</span>
+											<p>
+												Медицинские и психологические основания для проведения эстетической
+												ринопластики.
+												Ленгина М.А., Коркмазов А.М., Саркисян И.И., Биджиев А.С., Киселева Е.О.
+												Медицинский
+												совет. 2023. Том 17. №7. с.196-202
+											</p>
+										</li>
+										<li>
+											<span>4.</span>
+											<p>
+												Ринопластика: последовательный подход к работе с костной пирамидой
+												носа.
+												Жолтиков
+												В.В., Головатинский В.В., Палхази П.М., Жербо О.А., Даниель Р.К., Уергхи
+												Р.М.
+												Пластическая хирургия и эстетическая медицина. 2020. №3. с.25-37
+											</p>
+										</li>
+										<li>
+											<span>5.</span>
+											<p>
+												Ринопластика, дефиниция и особенности. Елыманова О.Н. Modern Science.
+												2019. №11-4.
+												с.162-169
+											</p>
+										</li>
+									</ul>
+								</div>
+								<div class="content-article__note">
+									<p>
+										Информационные материалы на сайте размещены с целью ознакомления, а не
+										самолечения.
+										Любая пластическая операция — это хирургическое вмешательство. При принятии
+										решения
+										об операции, обязательно проконсультируйтесь с квалифицированным специалистом.
+									</p>
+								</div>
 							</div>
-						</div>
-						<div class="main-home__arrows arrows">
-							<div class="main-home__arrow-prev arrow-prev _icon-arrow"></div>
-							<div class="main-home__arrow-next arrow-next  _icon-arrow"></div>
+							<div class="article__sticky sticky-article">
+								<div class="sticky-article__content">
+									<div class="sticky-article__table">
+										<h5>Содержание</h5>
+										<ul>
+											<li>
+												<a href="#" data-goto-header data-goto=".indications" class="_icon-arrow">Показания к
+													операции</a>
+											</li>
+											<li>
+												<a href="#" data-goto-header data-goto=".limitations" class="_icon-arrow">Противопоказания и
+													ограничения</a>
+											</li>
+											<li>
+												<a href="#" data-goto-header data-goto=".arguments" class="_icon-arrow">Аргументы за и
+													против</a>
+											</li>
+											<li>
+												<a href="#" data-goto-header data-goto=".expectations" class="_icon-arrow">Может ли
+													ринопластика не
+													оправдать
+													ожиданий?</a>
+											</li>
+											<li>
+												<a href="#" data-goto-header data-goto=".sources" class="_icon-arrow">Выводы</a>
+											</li>
+										</ul>
+									</div>
+									<div class="sticky-article__advertisement">
+										<div class="sticky-article__item">
+											<h6>ринопластика в клинике «форма»</h6>
+											<h5>От 350 000 ₽</h5>
+											<a href="#" class="sticky-article__link link _icon-arrow-long">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="page__services services popular-services">
-				<div class="services__container">
-					<h2>Популярные услуги</h2>
-					<div class="services__content scrolls">
-						<div class="services__body scroll">
-							<div class="services__column">
-								<div class="services__item">
-									<div class="services__image">
-										<picture><source data-srcset="img/services/image-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-1.png" alt=""></picture>
-									</div>
-									<div class="services__desc">
-										<div class="services__desc-top">
-											<div class="services__service">грудь</div>
-										</div>
-										<h4>увеличение груди</h4>
+			<div class="page__result result">
+				<div class="result__container">
+					<h2>до и после</h2>
+					<div class="result__content scrolls">
+						<div class="result__body scroll">
+							<div class="result__column">
+								<div class="result__item">
+									<a href="#" data-popup="#result-4" class="result__image">
+										<picture><source data-srcset="img/result/result-6.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/result/result-6.png" alt=""></picture>
+									</a>
+									<div class="result__desc">
+										<h5>Елена, 37 лет</h5>
 										<p>
-											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
-											трети лица, под подбородком, по линии контура нижней челюсти.
+											Риносептопластика
 										</p>
-										<div class="services__price">цена: От 350 000 ₽</div>
-										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
+										<div class="result__text">Процедуру выполнил пластический хирург</div>
+										<a href="#">
+											<h6>качаян ваник аршалуйсович</h6>
+										</a>
 									</div>
 								</div>
 							</div>
-							<div class="services__column">
-								<div class="services__item">
-									<div class="services__image">
-										<picture><source data-srcset="img/services/image-2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-2.png" alt=""></picture>
-									</div>
-									<div class="services__desc">
-										<div class="services__desc-top">
-											<div class="services__service">лицо</div>
-										</div>
-										<h4>фейслифтинг</h4>
+							<div class="result__column">
+								<div class="result__item">
+									<a href="#" data-popup="#result-5" class="result__image">
+										<picture><source data-srcset="img/result/result-7.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/result/result-7.png" alt=""></picture>
+									</a>
+									<div class="result__desc">
+										<h5>пациентка, 28 лет</h5>
 										<p>
-											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
-											трети лица, под подбородком, по линии контура нижней челюсти.
+											Пластика кончика носа
 										</p>
-										<div class="services__price">цена: От 350 000 ₽</div>
-										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
+										<div class="result__text">Процедуру выполнил пластический хирург</div>
+										<a href="#">
+											<h6>качаян ваник аршалуйсович</h6>
+										</a>
 									</div>
 								</div>
 							</div>
-							<div class="services__column">
-								<div class="services__item">
-									<div class="services__image">
-										<picture><source data-srcset="img/services/image-3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-3.png" alt=""></picture>
-									</div>
-									<div class="services__desc">
-										<div class="services__desc-top">
-											<div class="services__service">тело</div>
-										</div>
-										<h4>абдоминопластика</h4>
+							<div class="result__column">
+								<div class="result__item">
+									<a href="#" data-popup="#result-6" class="result__image">
+										<picture><source data-srcset="img/result/result-8.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/result/result-8.png" alt=""></picture>
+									</a>
+									<div class="result__desc">
+										<h5>марина, 24 года</h5>
 										<p>
-											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
-											трети лица, под подбородком, по линии контура нижней челюсти.
+											Ринопластика
 										</p>
-										<div class="services__price">цена: От 350 000 ₽</div>
-										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
-									</div>
-								</div>
-							</div>
-							<div class="services__column">
-								<div class="services__item">
-									<div class="services__image">
-										<picture><source data-srcset="img/services/image-4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/services/image-4.png" alt=""></picture>
-									</div>
-									<div class="services__desc">
-										<div class="services__desc-top">
-											<div class="services__service">прочее</div>
-										</div>
-										<h4>чекап «красота и здоровье»</h4>
-										<p>
-											Процедура эффективна для устранения птоза (опущения) мягких тканей в средней
-											трети лица, под подбородком, по линии контура нижней челюсти.
-										</p>
-										<div class="services__price">цена: От 350 000 ₽</div>
-										<a href="#" class="services__link link _icon-arrow-long">Подробнее</a>
+										<div class="result__text">Лечение провёл косметолог</div>
+										<a href="#">
+											<h6>качаян ваник аршалуйсович</h6>
+										</a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<a href="#" class="services__button button">Все услуги и цены</a>
-				</div>
-			</div>
-			<div class="page__main-about main-about">
-				<div class="main-about__container">
-					<h2>О клинике</h2>
-					<div class="main-about__content">
-						<div class="main-about__top top-main-about">
-							<div class="top-main-about__image">
-								<img data-src="img/icons/forma_text.svg" alt="">
-							</div>
-							<div class="top-main-about__swiper">
-								<div class="top-main-about__slider swiper">
-									<div class="top-main-about__wrapper swiper-wrapper">
-										<div class="top-main-about__slide swiper-slide">
-											<div class="top-main-about__item">
-												<div class="h1">10+</div>
-												<p>
-													персонифицированных программ восстановления после операций,
-													индивидуально разработанных врачами клиники
-												</p>
-											</div>
-										</div>
-										<div class="top-main-about__slide swiper-slide">
-											<div class="top-main-about__item">
-												<div class="h1">Total immersion</div>
-												<p>
-													— обучающий курс, разработанный на основе богатого операционного
-													опыта наших специалистов
-												</p>
-											</div>
-										</div>
-										<div class="top-main-about__slide swiper-slide">
-											<div class="top-main-about__item">
-												<div class="h1">30+</div>
-												<p>
-													— обучающий курс, разработанный на основе богатого операционного
-													опыта наших специалистов
-												</p>
-											</div>
-										</div>
-										<div class="top-main-about__slide swiper-slide">
-											<div class="top-main-about__item">
-												<div class="h1">10+</div>
-												<p>
-													первоклассных специалистов, в том числе имеющих учёную степень
-												</p>
-											</div>
-										</div>
-										<div class="top-main-about__slide swiper-slide">
-											<div class="top-main-about__item">
-												<div class="h1">500+</div>
-												<p>
-													успешных операций и довольных результатом клиентов
-												</p>
-											</div>
-										</div>
-										<div class="top-main-about__slide swiper-slide">
-											<div class="top-main-about__item">
-												<div class="h1">collaboration</div>
-												<p>
-													— программа сотрудничества с Институтом скорой помощи им.
-													Склифосовского, в рамках которого расширены возможности оперативных
-													вмешательств
-												</p>
-											</div>
-										</div>
-										<div class="top-main-about__slide swiper-slide">
-											<div class="top-main-about__item">
-												<div class="h1">10+</div>
-												<p>
-													персонифицированных программ восстановления после операций,
-													индивидуально разработанных врачами клиники
-												</p>
-											</div>
-										</div>
-										<div class="top-main-about__slide swiper-slide">
-											<div class="top-main-about__item">
-												<div class="h1">10+</div>
-												<p>
-													персонифицированных программ восстановления после операций,
-													индивидуально разработанных врачами клиники
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="top-main-about__pagination pagination"></div>
-							</div>
-						</div>
-						<div class="main-about__bottom bottom-main-about">
-							<div class="bottom-main-about__body">
-								<div class="bottom-main-about__column">
-									<div class="bottom-main-about__item">
-										<h4>комфорт</h4>
-										<p>
-											Мы обеспечиваем уютную и доброжелательную атмосферу, позволяющую пациентам
-											всецело довериться опытным рукам профессиональной команды
-										</p>
-									</div>
-								</div>
-								<div class="bottom-main-about__column">
-									<div class="bottom-main-about__item">
-										<h4>качество</h4>
-										<p>
-											Наш приоритет — превосходный уровень сервиса на всех этапах от обращения на
-											ресепшн или к постовой медсестре до индивидуального сопровождения процедуры
-										</p>
-									</div>
-								</div>
-								<div class="bottom-main-about__column">
-									<div class="bottom-main-about__item">
-										<h4>безопасность</h4>
-										<p>
-											Клиника сертифицирована по современным стандартам. Операции проходят на
-											высококлассном оборудовании с соблюдением международных протоколов
-										</p>
-									</div>
-								</div>
-							</div>
-							<a href="#" class="main-about__button button">Узнать больше о нас</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="page__forms forms">
-				<div class="forms__container">
-					<div class="forms__content">
-						<div class="forms__item">
-							<h4>Получите консультацию специалистов клиники</h4>
-							<p>
-								Заполните форму и наш менеджер свяжется с Вами
-							</p>
-							<form action="#" data-dev data-popup-message="#form-message" class="forms__form">
-								<div class="forms__column">
-									<div class="forms__input">
-										<label for="name_1">Имя <span>*</span></label>
-										<input id="name_1" data-required data-error="Hint" autocomplete="off" type="text" name="form[]" placeholder="Как к Вам обращаться?">
-									</div>
-								</div>
-								<div class="forms__column">
-									<div class="forms__input">
-										<label for="tel_1">Телефон <span>*</span></label>
-										<input id="tel_1" data-error="Hint" data-required autocomplete="off" class="telephone" type="text" name="form[]" placeholder="+7 (      )">
-									</div>
-								</div>
-								<div class="forms__column">
-									<button type="submit" class="forms__button button-color">Отправить</button>
-								</div>
-							</form>
-							<div class="forms__text">Нажимая на кнопку, вы даете согласие на <a href="#">обработку своих
-									персональных данных</a></div>
-						</div>
-					</div>
+					<a href="#" class="result__button button">Все результаты</a>
 				</div>
 			</div>
 			<div class="page__teams teams">
 				<div class="teams__container">
-					<h2>команда</h2>
+					<h2>специалисты по ринопластике</h2>
 					<div class="teams__content scrolls">
 						<div class="teams__body scroll">
 							<div class="teams__column">
@@ -681,348 +618,6 @@
 						</div>
 					</div>
 					<a href="#" class="teams__button button">Смотреть всех</a>
-				</div>
-			</div>
-			<div class="page__result result">
-				<div class="result__container">
-					<h2>до и после</h2>
-					<div class="result__content scrolls">
-						<div class="result__body scroll">
-							<div class="result__column">
-								<div class="result__item">
-									<a href="#" data-popup="#result-1" class="result__image">
-										<picture><source data-srcset="img/result/result-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/result/result-1.png" alt=""></picture>
-									</a>
-									<div class="result__desc">
-										<h5>Елена, 37 лет</h5>
-										<p>
-											Подтяжка средней зоны лица и нижняя блефаропластика
-										</p>
-										<div class="result__text">Процедуру выполнил пластический хирург</div>
-										<a href="#">
-											качаян ваник аршалуйсович
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="result__column">
-								<div class="result__item">
-									<a href="#" data-popup="#result-2" class="result__image">
-										<picture><source data-srcset="img/result/result-2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/result/result-2.png" alt=""></picture>
-									</a>
-									<div class="result__desc">
-										<h5>пациентка, 28 лет</h5>
-										<p>
-											Маммопластика и подтяжка груди
-										</p>
-										<div class="result__text">Процедуру выполнил пластический хирург</div>
-										<a href="#">
-											качаян ваник аршалуйсович
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="result__column">
-								<div class="result__item">
-									<a href="#" data-popup="#result-3" class="result__image">
-										<picture><source data-srcset="img/result/result-3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/result/result-3.png" alt=""></picture>
-									</a>
-									<div class="result__desc">
-										<h5>марина, 24 года</h5>
-										<p>
-											Лечение акне
-										</p>
-										<div class="result__text">Лечение провёл косметолог</div>
-										<a href="#">
-											качаян ваник аршалуйсович
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<a href="#" class="result__button button">Все результаты</a>
-				</div>
-			</div>
-			<div class="page__reviews reviews">
-				<div class="reviews__container">
-					<h2>отзывы</h2>
-					<div class="reviews__content scrolls">
-						<div class="reviews__body scroll">
-							<div class="reviews__column">
-								<div class="reviews__item">
-									<div class="reviews__top">
-										<div class="reviews__image">
-											<picture><source data-srcset="img/photo/photo-2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/photo/photo-2.png" alt=""></picture>
-										</div>
-										<div class="reviews__desc">
-											<h6>алина Р.</h6>
-											<p>
-												Знаток города 5 уровня
-											</p>
-										</div>
-									</div>
-									<div class="reviews__bottom">
-										<div class="reviews__ratings">
-											<div class="reviews__rating rating">
-												<div class="rating__body">
-													<div class="rating__line"></div>
-													<div class="rating__activeline"></div>
-													<div class="rating__stars">
-														<input type="radio" class="rating__star" value="1" name="rating">
-														<input type="radio" class="rating__star" value="2" name="rating">
-														<input type="radio" class="rating__star" value="3" name="rating">
-														<input type="radio" class="rating__star" value="4" name="rating">
-														<input type="radio" class="rating__star" value="5" name="rating">
-													</div>
-													<input value="4.5" type="hidden" name="rating" class="rating-input">
-												</div>
-											</div>
-											<div class="reviews__data">13 августа</div>
-										</div>
-										<p>
-											Только одни положительные эмоции! Сама клиника расположена в удобном
-											месте,красиво и чисто. Персонал весь приветливый. Отдельная огромная
-											благодарность врачу Маланичеву М.Ю. За его волшебные руки, дай Бог много
-											здоровья,всем советую,он нереально крутой! Также косметологу Кристине
-											Станиславовне хочу выразить благодарность, профи своего дела, обаятельный
-											привлекательный специалист. С ней легко,очень аккуратная и внимательная!
-										</p>
-										<a href="#" class="reviews__link link _icon-arrow-long">Читать
-											полностью</a>
-									</div>
-								</div>
-							</div>
-							<div class="reviews__column">
-								<div class="reviews__item">
-									<div class="reviews__top">
-										<div class="reviews__image">
-											<picture><source data-srcset="img/photo/photo-3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/photo/photo-3.png" alt=""></picture>
-										</div>
-										<div class="reviews__desc">
-											<h6>алина Р.</h6>
-											<p>
-												Знаток города 4 уровня
-											</p>
-										</div>
-									</div>
-									<div class="reviews__bottom">
-										<div class="reviews__ratings">
-											<div class="reviews__rating rating">
-												<div class="rating__body">
-													<div class="rating__line"></div>
-													<div class="rating__activeline"></div>
-													<div class="rating__stars">
-														<input type="radio" class="rating__star" value="1" name="rating">
-														<input type="radio" class="rating__star" value="2" name="rating">
-														<input type="radio" class="rating__star" value="3" name="rating">
-														<input type="radio" class="rating__star" value="4" name="rating">
-														<input type="radio" class="rating__star" value="5" name="rating">
-													</div>
-													<input value="5" type="hidden" name="rating" class="rating-input">
-												</div>
-											</div>
-											<div class="reviews__data">5 августа</div>
-										</div>
-										<p>
-											Хочу поблагодарить пластического хирурга Покаленьева Никиту Сергеевича за
-											прекрасную работу и замечательный результат( круговая блефаропластика) за
-											внимательное отношение. Никита Сергеевич- лучший доктор! Профессионал
-											высочайшего уровня! Результатом операции я очень довольна! В клинике я
-											пробыла сутки и вернулась домой. В послеоперационном периоде были отеки, но
-											со временем они прошли. Сейчас мне 48лет, но выгляжу я на 10-15 лет моложе.
-											Мой возраст мне никто...
-										</p>
-										<a href="#" class="reviews__link link _icon-arrow-long">Читать
-											полностью</a>
-									</div>
-								</div>
-							</div>
-							<div class="reviews__column">
-								<div class="reviews__item">
-									<div class="reviews__top">
-										<div class="reviews__image">
-											<picture><source data-srcset="img/photo/photo-2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/photo/photo-2.png" alt=""></picture>
-										</div>
-										<div class="reviews__desc">
-											<h6>алина Р.</h6>
-											<p>
-												Знаток города 5 уровня
-											</p>
-										</div>
-									</div>
-									<div class="reviews__bottom">
-										<div class="reviews__ratings">
-											<div class="reviews__rating rating">
-												<div class="rating__body">
-													<div class="rating__line"></div>
-													<div class="rating__activeline"></div>
-													<div class="rating__stars">
-														<input type="radio" class="rating__star" value="1" name="rating">
-														<input type="radio" class="rating__star" value="2" name="rating">
-														<input type="radio" class="rating__star" value="3" name="rating">
-														<input type="radio" class="rating__star" value="4" name="rating">
-														<input type="radio" class="rating__star" value="5" name="rating">
-													</div>
-													<input value="4.5" type="hidden" name="rating" class="rating-input">
-												</div>
-											</div>
-											<div class="reviews__data">22 июля</div>
-										</div>
-										<p>
-											Только одни положительные эмоции! Сама клиника расположена в удобном
-											месте,красиво и чисто. Персонал весь приветливый. Отдельная огромная
-											благодарность врачу Маланичеву М.Ю. За его волшебные руки, дай Бог много
-											здоровья,всем советую,он нереально крутой! Также косметологу Кристине
-											Станиславовне хочу выразить благодарность, профи своего дела, обаятельный
-											привлекательный специалист. С ней легко,очень аккуратная и внимательная!
-										</p>
-										<a href="#" class="reviews__link link _icon-arrow-long">Читать
-											полностью</a>
-									</div>
-								</div>
-							</div>
-							<div class="reviews__column">
-								<div class="reviews__item">
-									<div class="reviews__top">
-										<div class="reviews__image">
-											<picture><source data-srcset="img/photo/photo-3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/photo/photo-3.png" alt=""></picture>
-										</div>
-										<div class="reviews__desc">
-											<h6>алина Р.</h6>
-											<p>
-												Знаток города 4 уровня
-											</p>
-										</div>
-									</div>
-									<div class="reviews__bottom">
-										<div class="reviews__ratings">
-											<div class="reviews__rating rating">
-												<div class="rating__body">
-													<div class="rating__line"></div>
-													<div class="rating__activeline"></div>
-													<div class="rating__stars">
-														<input type="radio" class="rating__star" value="1" name="rating">
-														<input type="radio" class="rating__star" value="2" name="rating">
-														<input type="radio" class="rating__star" value="3" name="rating">
-														<input type="radio" class="rating__star" value="4" name="rating">
-														<input type="radio" class="rating__star" value="5" name="rating">
-													</div>
-													<input value="5" type="hidden" name="rating" class="rating-input">
-												</div>
-											</div>
-											<div class="reviews__data">1 июля</div>
-										</div>
-										<p>
-											Хочу поблагодарить пластического хирурга Покаленьева Никиту Сергеевича за
-											прекрасную работу и замечательный результат( круговая блефаропластика) за
-											внимательное отношение. Никита Сергеевич- лучший доктор! Профессионал
-											высочайшего уровня! Результатом операции я очень довольна! В клинике я
-											пробыла сутки и вернулась домой. В послеоперационном периоде были отеки, но
-											со временем они прошли. Сейчас мне 48лет, но выгляжу я на 10-15 лет моложе.
-											Мой возраст мне никто...
-										</p>
-										<a href="#" class="reviews__link link _icon-arrow-long">Читать
-											полностью</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<a href="#" class="reviews__button button">Все отзывы</a>
-				</div>
-			</div>
-			<div class="page__forms forms">
-				<div class="forms__container">
-					<div class="forms__content">
-						<div class="forms__item">
-							<h4>Рассчитайте стоимость операции</h4>
-							<p>
-								Заполните форму и наш менеджер свяжется с Вами
-							</p>
-							<form action="#" data-dev data-popup-message="#form-message" class="forms__form">
-								<div class="forms__column">
-									<div class="forms__input">
-										<label for="name-operation">Название операции (если знаете)</label>
-										<input id="name-operation" autocomplete="off" type="text" name="form[2]" placeholder="Начните вводить название">
-									</div>
-								</div>
-								<div class="forms__column">
-									<div class="forms__input">
-										<div class="forms__select select">
-											<div class="select__menu">
-												<div class="select__btn">
-													<div class="select__btntext">
-														<label for="doctor">Хирург (опционально)</label>
-														<input id="doctor" autocomplete="off" type="text" name="form[2]" placeholder="Выберите из списка" class="select__input">
-													</div>
-													<div class="select__icon _icon-arrow"></div>
-												</div>
-												<div class="select__body">
-													<ul class="select__options">
-														<li class="select__option">
-															<div class="select__option-text">Выберите из списка1</div>
-														</li>
-														<li class="select__option">
-															<div class="select__option-text">Выберите из списка2</div>
-														</li>
-														<li class="select__option">
-															<div class="select__option-text">Выберите из списка3</div>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="forms__column">
-									<div class="forms__input">
-										<div class="forms__select select">
-											<div class="select__menu">
-												<div class="select__btn">
-													<div class="select__btntext">
-														<label for="data">Примерная дата</label>
-														<input id="data" autocomplete="off" type="text" name="form[2]" placeholder="Выберите из списка" class="select__input">
-													</div>
-													<div class="select__icon _icon-arrow"></div>
-												</div>
-												<div class="select__body">
-													<ul class="select__options">
-														<li class="select__option">
-															<div class="select__option-text">Выберите из списка1</div>
-														</li>
-														<li class="select__option">
-															<div class="select__option-text">Выберите из списка2</div>
-														</li>
-														<li class="select__option">
-															<div class="select__option-text">Выберите из списка3</div>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="forms__column">
-									<div class="forms__input">
-										<label for="name_2">Имя <span>*</span></label>
-										<input id="name_2" data-required data-error="Hint" autocomplete="off" type="text" name="form[2]" placeholder="Как к Вам обращаться?">
-									</div>
-								</div>
-								<div class="forms__column">
-									<div class="forms__input">
-										<label for="tel_2">Телефон <span>*</span></label>
-										<input id="tel_2" data-required data-error="Hint" autocomplete="off" class="telephone" type="text" name="form[2]" placeholder="+7 (      )">
-									</div>
-								</div>
-								<div class="forms__column">
-									<button type="submit" class="forms__button button-color">Отправить</button>
-								</div>
-							</form>
-							<div class="forms__text">Нажимая на кнопку, вы даете согласие на <a href="#">обработку своих
-									персональных данных</a></div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</main>
